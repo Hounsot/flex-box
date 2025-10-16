@@ -24,10 +24,10 @@
       </a>
     </div>
   </div>
-  <section class="relative flex flex-col w-full aspect-video bg-amber-900" data-slider data-mode="fade">
-    <!-- slider -->
-    <div class="main-slider absolute top-[40px] left-[40px] flex flex-row w-[680px] h-[270px] p-[40px] z-100">
-      <p class="text-white uppercase text-[28px] leading-[30px]">В Новой Москве и МО на ключевых логистических маршрутах</p>
+  <section class="relative flex flex-col w-full aspect-video max-md:w-full max-md:aspect-[360/440] bg-amber-900" data-slider data-mode="fade">
+  <!-- slider -->
+    <div class="main-slider absolute top-[40px] left-[40px] max-md:top-[auto] max-md:bottom-[0] max-md:left-[0] max-md:pt-[20%] flex flex-row w-[680px] h-[270px] max-md:w-[100%] max-md:h-[auto] max-md:aspect-[360/180] p-[40px] max-md:p-[20px] z-100">
+      <p class="text-white uppercase text-[28px] leading-[30px] max-md:text-[17px] max-md:leading-[20px]">В Новой Москве и МО на ключевых логистических маршрутах</p>
       <!-- counter and slider buttons -->
       <div class="flex flex-row items-center h-fit gap-[5px]" data-slider-controls>
         <p class="text-[13px] text-[#9CA8AE] text-nowrap" data-counter><span class="text-white" data-current>1</span> / <span data-total>3</span></p>
@@ -104,9 +104,9 @@
     </div>
     <div class="flex w-1/2 max-md:w-full aspect-square relative overflow-hidden">
       <div class="absolute top-0 left-0 w-full min-w-fit h-full flex flex-row" data-track>
-        <img class="h-[720px] w-[720px] min-w-[720px] min-h-[720px] max-md:h-[360px] max-md:w-[360px] max-md:min-w-[360px] max-md:min-h-[360px] bg-zinc-900" data-slide src="https://i.pinimg.com/736x/b5/f7/62/b5f762e6e1532a6bf9e0db22bb1896fd.jpg" alt="">
-        <img class="h-[720px] w-[720px] min-w-[720px] min-h-[720px] max-md:h-[360px] max-md:w-[360px] max-md:min-w-[360px] max-md:min-h-[360px] bg-zinc-800" data-slide src="https://i.pinimg.com/736x/9d/b1/59/9db15984898e2e189f5774d130706d4d.jpg" alt="">
-        <img class="h-[720px] w-[720px] min-w-[720px] min-h-[720px] max-md:h-[360px] max-md:w-[360px] max-md:min-w-[360px] max-md:min-h-[360px] bg-zinc-700" data-slide src="https://i.pinimg.com/736x/ca/d8/13/cad8138e2ff013b97efd3304dc378159.jpg" alt="">
+        <img class="h-[720px] w-[720px] min-w-[720px] min-h-[720px] max-md:aspect-square max-md:h-[auto] max-md:w-[100vw] max-md:min-w-[100vw] max-md:min-h-[360px] bg-zinc-900" data-slide src="https://i.pinimg.com/736x/b5/f7/62/b5f762e6e1532a6bf9e0db22bb1896fd.jpg" alt="">
+        <img class="h-[720px] w-[720px] min-w-[720px] min-h-[720px] max-md:aspect-square max-md:h-[auto] max-md:w-[100vw] max-md:min-w-[100vw] max-md:min-h-[360px] bg-zinc-800" data-slide src="https://i.pinimg.com/736x/9d/b1/59/9db15984898e2e189f5774d130706d4d.jpg" alt="">
+        <img class="h-[720px] w-[720px] min-w-[720px] min-h-[720px] max-md:aspect-square max-md:h-[auto] max-md:w-[100vw] max-md:min-w-[100vw] max-md:min-h-[360px] bg-zinc-700" data-slide src="https://i.pinimg.com/736x/ca/d8/13/cad8138e2ff013b97efd3304dc378159.jpg" alt="">
       </div>
     </div>
   </section>
@@ -152,7 +152,7 @@
     </div>
   </section>
   <section class="flex flex-col w-full h-fit" data-slider data-mode="translate" data-infinite="true">
-    <div class="flex flex-row w-full p-[40px] max-md:p-[30px] items-center max-md:flex-col justify-between max-md:items-start">
+    <div class="flex flex-row w-full p-[40px] max-md:p-[30px] max-md:gap-[20px] items-center max-md:flex-col justify-between max-md:items-start">
       <div class="flex flex-row gap-[40px] items-center">
         <h2 class="title">Наши преимущества</h2>
       </div>
@@ -347,8 +347,18 @@
       <div class="flex items-center w-full h-[90px] px-[40px] max-md:px-[0] border-b-[1px] border-[#18181815]">
         <p class="row_text">Электронная почта</p>
       </div>
-      <div class="flex items-center w-full h-[90px] px-[40px] max-md:px-[0]">
+      <div class="flex items-center w-full h-[90px] px-[40px] max-md:px-[0] border-b-[1px] border-[#18181815]">
         <p class="row_text">Комментарий (необязательно)</p>
+      </div>
+      <div class="flex flex-row max-md:flex-col justify-between items-center max-md:items-start max-md:gap-[30px] w-full p-[40px] pt-[40px] max-md:px-[0] max-md:pt-[40px]">
+        <p class="text-[11px] leading-[13px] text-[#9CA8AE] uppercase">Нажимаю кнопку «отправить»,<br> я соглашаюсь на обработку<br><a class="underline text-black" href="#">персональных данных</a></p>
+        <button class="button primary">
+          Отправить
+          <!-- button icon -->
+          <div class="w-[20px] h-[20px] rounded-full bg-white">
+            <img class="w-[20px] h-[20px]" src="" alt="">
+          </div>
+        </button>
       </div>
     </div>
   </section>

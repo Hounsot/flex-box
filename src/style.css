@@ -133,6 +133,11 @@ body{
 }
 .main-slider{
   background-image: url('../MainSliderBG.svg');
+  @media screen and (max-width: 768px) {
+    background-image: url('../MainSliderMobileBG.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 .button{
   display: flex;
