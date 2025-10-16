@@ -19,6 +19,23 @@ body{
   height: fit-content;
 }
 
+#scale-wrapper{
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#scale-container{
+  width: 1440px; /* design width */
+  transform-origin: top left;
+  margin: 0 auto; /* center when scale = 1 */
+}
+
+#scale-content{
+  width: 100%;
+}
+
 .title{
   font-size: 57px;
   line-height: 55px;
