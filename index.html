@@ -5,47 +5,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flex Box</title>
-  <script type="module" crossorigin src="/flex-box/assets/index-KXO6d_qJ.js"></script>
-  <link rel="stylesheet" crossorigin href="/flex-box/assets/index-DUJBka3I.css">
+  <script type="module" crossorigin src="/flex-box/assets/index-Cch7E4Ud.js"></script>
+  <link rel="stylesheet" crossorigin href="/flex-box/assets/index-rmUxMo2x.css">
 </head>
 
-<body>
+<body class="overflow-x-hidden max-w-full">
   <div id="scale-wrapper">
     <div id="scale-container">
       <div id="scale-content">
-  <div class="flex flex-col gap-[80px] p-[40px] max-md:px-[30px]">
-    <h1 class="title">FLEX BOX — склад класса А с гибким делением блоков от 4 500 м²</h1>
-    <div class="flex flex-row gap-[20px] justify-between max-md:flex-col max-md:gap-[60px]">
+  <div class="flex flex-col gap-[80px] max-md:gap-[40px] p-[40px] max-md:px-[30px]">
+    <h1 class="title">FLEX BOX — склад «класса А» с гибким делением блоков от 4 500 м²</h1>
+    <div class="flex flex-row gap-[240px] justify-between max-md:flex-col max-md:gap-[60px]">
       <p class="text">Новый формат индустриально-логистической недвижимости для тех, кому тесно в light industrial</p>
       <a class="button primary" href="">
         Выбрать помещение
         <!-- button icon -->
         <div class="w-[20px] h-[20px] rounded-full bg-white">
-          <img class="w-[20px] h-[20px]" src="" alt="">
+          <img class="w-[20px] h-[20px] invert" src="icons/IconPlus.svg" alt="">
         </div>
       </a>
     </div>
   </div>
-  <section class="relative flex flex-col w-full aspect-video max-md:w-full max-md:aspect-[360/440] bg-amber-900" data-slider data-mode="fade">
+  <section class="relative flex flex-col w-full aspect-video max-md:w-full max-md:aspect-[360/440] bg-black" data-slider data-mode="fade">
   <!-- slider -->
-    <div class="main-slider absolute top-[40px] left-[40px] max-md:top-[auto] max-md:bottom-[0] max-md:left-[0] max-md:pt-[20%] flex flex-row w-[680px] h-[270px] max-md:w-[100%] max-md:h-[auto] max-md:aspect-[360/180] p-[40px] max-md:p-[20px] z-100">
+    <div class="main-slider absolute top-[40px] left-[40px] max-md:top-[auto] max-md:bottom-[0] max-md:left-[0] max-md:pt-[22%] flex flex-row max-md:flex-col max-md:items-end w-[680px] h-[270px] max-md:w-[100%] max-md:h-[auto] max-md:aspect-[360/180] p-[40px] max-md:p-[20px] z-100">
       <p class="text-white uppercase text-[28px] leading-[30px] max-md:text-[17px] max-md:leading-[20px]">В Новой Москве и МО на ключевых логистических маршрутах</p>
       <!-- counter and slider buttons -->
-      <div class="flex flex-row items-center h-fit gap-[5px]" data-slider-controls>
-        <p class="text-[13px] text-[#9CA8AE] text-nowrap" data-counter><span class="text-white" data-current>1</span> / <span data-total>3</span></p>
+      <div class="flex flex-row items-center h-fit gap-[10px] max-md:absolute top-[8%]" data-slider-controls>
+        <p class="text-[13px] text-[#9CA8AE] text-nowrap max-md:hidden" data-counter><span class="text-white" data-current>1</span> / <span data-total>3</span></p>
         <div class="flex items-center justify-center w-[40px] h-[40px] rounded-full border-[1px] border-[#fff] cursor-pointer" data-prev>
-          <img class="w-[40px] h-[40px]" src="" alt="">
+          <img class="w-[40px] h-[40px]" src="icons/IconLeft.svg" alt="">
         </div>
         <div class="flex items-center justify-center w-[40px] h-[40px] rounded-full border-[1px] border-[#fff] cursor-pointer" data-next>
-          <img class="w-[40px] h-[40px]" src="" alt="">
+          <img class="w-[40px] h-[40px]" src="icons/IconRight.svg" alt="">
         </div>
       </div>
     </div>
     <div class="relative w-full h-full" data-track>
       <!-- circle through opacity -->
-      <img class="absolute w-full h-full opacity-100 transition-all duration-200 ease-in" data-slide src="https://i.pinimg.com/1200x/b4/9d/b4/b49db4173ac1e3c76c925cb89ced058b.jpg" alt="">
-      <img class="absolute w-full h-full opacity-0 transition-all duration-200 ease-in" data-slide src="https://i.pinimg.com/736x/aa/51/d2/aa51d2e61e871c16cddfd10cce99e8b8.jpg" alt="">
-      <img class="absolute w-full h-full opacity-0 transition-all duration-200 ease-in" data-slide src="https://i.pinimg.com/1200x/6c/fd/04/6cfd04fdd0be40627a54a05a91a1ad83.jpg" alt="">
+      <img class="absolute w-full max-md:h-[75%] h-full max-md:object-cover opacity-100 transition-all duration-200 ease-in" data-slide src="cover.png" alt="">
+      <img class="absolute w-full max-md:h-[75%] h-full max-md:object-cover opacity-0 transition-all duration-200 ease-in" data-slide src="cover2.png" alt="">
+      <img class="absolute w-full max-md:h-[75%] h-full max-md:object-cover opacity-0 transition-all duration-200 ease-in" data-slide src="cover.png" alt="">
     </div>
   </section>
   <!-- halves -->
@@ -87,34 +87,36 @@
   </section>
   <!-- halves with slider -->
   <section class="flex flex-row max-md:flex-col-reverse w-full h-fit overflow-x-hidden" data-slider data-mode="translate" data-infinite="true">
-    <div class="relative flex flex-col gap-[40px] w-1/2 max-md:w-full p-[40px] max-md:p-[30px] bg-black">
+    <div class="relative flex flex-col gap-[40px] w-1/2 max-md:w-full p-[40px] max-md:p-[30px] bg-[#181818] max-md:min-h-[470px]">
       <div class="flex flex-row justify-between">
-        <p class="text-[13px] text-white uppercase">Особенности Flex Box</p>
+        <p class="text-[13px] max-md:text-[11px] text-white uppercase">Особенности Flex Box</p>
         <!-- counter -->
-        <p class="text-[13px] text-[#9CA8AE]" data-counter><span class="text-white" data-current>1</span> / <span data-total>3</span></p>
+        <p class="text-[13px] max-md:text-[11px] text-[#9CA8AE]" data-counter><span class="text-white" data-current>1</span> / <span data-total>3</span></p>
       </div>
-      <h2 class="text-[28px] text-white uppercase">Вырианты деления блоков</h2>
-      <div class="flex flex-row gap-[5px]">
-        <div class="flex items-center justify-center w-[40px] h-[40px] rounded-full border-[1px] border-[#fff] cursor-pointer" data-prev>
-          <img class="w-[40px] h-[40px]" src="" alt="">
-        </div>
-        <div class="flex items-center justify-center w-[40px] h-[40px] rounded-full border-[1px] border-[#fff] cursor-pointer" data-next>
-          <img class="w-[40px] h-[40px]" src="" alt="">
+      <div class="flex flex-col gap-[12px] max-md:flex-row justify-between">
+        <h2 class="text-[28px] max-md:text-[17px] text-white uppercase">Вырианты деления блоков</h2>
+        <div class="flex flex-row gap-[5px]">
+          <div class="flex items-center justify-center w-[40px] h-[40px] rounded-full border-[1px] border-[#fff] cursor-pointer" data-prev>
+            <img class="w-[40px] h-[40px]" src="icons/IconLeft.svg" alt="">
+          </div>
+          <div class="flex items-center justify-center w-[40px] h-[40px] rounded-full border-[1px] border-[#fff] cursor-pointer" data-next>
+            <img class="w-[40px] h-[40px]" src="icons/IconRight.svg" alt="">
+          </div>
         </div>
       </div>
-      <p class="text-[36px] text-white w-[360px] leading-[40px]">Гибкое деление блоков от 4,5 тыс. м² до 20 тыс. м²</p>
+      <p class="text-[36px] max-md:text-[16px] leading-[120%] text-white w-[360px] leading-[40px]">Гибкое деление блоков от 4,5 тыс. м² до 20 тыс. м²</p>
     </div>
     <div class="flex w-1/2 max-md:w-full aspect-square relative overflow-hidden">
       <div class="absolute top-0 left-0 w-full min-w-fit h-full flex flex-row" data-track>
-        <img class="h-[720px] w-[720px] min-w-[720px] min-h-[720px] max-md:aspect-square max-md:h-[auto] max-md:w-[100vw] max-md:min-w-[100vw] max-md:min-h-[360px] bg-zinc-900" data-slide src="https://i.pinimg.com/736x/b5/f7/62/b5f762e6e1532a6bf9e0db22bb1896fd.jpg" alt="">
-        <img class="h-[720px] w-[720px] min-w-[720px] min-h-[720px] max-md:aspect-square max-md:h-[auto] max-md:w-[100vw] max-md:min-w-[100vw] max-md:min-h-[360px] bg-zinc-800" data-slide src="https://i.pinimg.com/736x/9d/b1/59/9db15984898e2e189f5774d130706d4d.jpg" alt="">
-        <img class="h-[720px] w-[720px] min-w-[720px] min-h-[720px] max-md:aspect-square max-md:h-[auto] max-md:w-[100vw] max-md:min-w-[100vw] max-md:min-h-[360px] bg-zinc-700" data-slide src="https://i.pinimg.com/736x/ca/d8/13/cad8138e2ff013b97efd3304dc378159.jpg" alt="">
+        <img class="h-[720px] w-[720px] min-w-[720px] min-h-[720px] max-md:aspect-square max-md:h-[auto] max-md:w-[100vw] max-md:min-w-[100vw] max-md:min-h-[360px] bg-zinc-900" data-slide src="Plan.png" alt="">
+        <img class="h-[720px] w-[720px] min-w-[720px] min-h-[720px] max-md:aspect-square max-md:h-[auto] max-md:w-[100vw] max-md:min-w-[100vw] max-md:min-h-[360px] bg-zinc-800" data-slide src="Plan.png" alt="">
+        <img class="h-[720px] w-[720px] min-w-[720px] min-h-[720px] max-md:aspect-square max-md:h-[auto] max-md:w-[100vw] max-md:min-w-[100vw] max-md:min-h-[360px] bg-zinc-700" data-slide src="Plan.png" alt="">
       </div>
     </div>
   </section>
   <!-- full image -->
   <section class="w-full aspect-video bg-amber-900">
-    <img class="w-full h-full" src="https://i.pinimg.com/736x/d1/03/ac/d103ac5e1af1ec57b6a23d65a1d643e7.jpg" alt="">
+    <img class="w-full h-full" src="render_cut.png" alt="">
   </section>
   <!-- halves -->
   <section class="flex flex-row max-md:flex-col max-md:px-[30px] w-full h-fit border-b-[1px] border-[#18181815]">
@@ -124,7 +126,7 @@
         Получить предложение
         <!-- button icon -->
         <div class="w-[20px] h-[20px] rounded-full bg-[#181818]">
-          <img class="w-[20px] h-[20px]" src="" alt="">
+          <img class="w-[20px] h-[20px]" src="icons/IconPlus.svg" alt="">
         </div>
       </a>
     </div>
@@ -160,10 +162,10 @@
       </div>
       <div class="flex flex-row gap-[5px]">
         <div class="flex items-center justify-center w-[40px] h-[40px] rounded-full border-[1px] border-[#181818] cursor-pointer" data-prev>
-          <img class="w-[40px] h-[40px]" src="" alt="">
+          <img class="w-[40px] h-[40px] invert" src="icons/IconLeft.svg" alt="">
         </div>
         <div class="flex items-center justify-center w-[40px] h-[40px] rounded-full border-[1px] border-[#181818] cursor-pointer" data-next>
-          <img class="w-[40px] h-[40px]" src="" alt="">
+          <img class="w-[40px] h-[40px] invert" src="icons/IconRight.svg" alt="">
         </div>
       </div>
     </div>
@@ -176,7 +178,7 @@
               <div>
                 <!-- button icon -->
                 <div class="w-[20px] h-[20px] rounded-full bg-[#ffffff]">
-                  <img class="w-[20px] h-[20px]" src="" alt="">
+                  <img class="w-[20px] h-[20px] invert" src="icons/IconPlus.svg" alt="">
                 </div>
               </div>
             </div>
@@ -191,7 +193,7 @@
               <div>
                 <!-- button icon -->
                 <div class="w-[20px] h-[20px] rounded-full bg-[#ffffff]">
-                  <img class="w-[20px] h-[20px]" src="" alt="">
+                  <img class="w-[20px] h-[20px] invert" src="icons/IconPlus.svg" alt="">
                 </div>
               </div>
             </div>
@@ -206,7 +208,7 @@
               <div>
                 <!-- button icon -->
                 <div class="w-[20px] h-[20px] rounded-full bg-[#ffffff]">
-                  <img class="w-[20px] h-[20px]" src="" alt="">
+                  <img class="w-[20px] h-[20px] invert" src="icons/IconPlus.svg" alt="">
                 </div>
               </div>
             </div>
@@ -221,7 +223,7 @@
               <div>
                 <!-- button icon -->
                 <div class="w-[20px] h-[20px] rounded-full bg-[#ffffff]">
-                  <img class="w-[20px] h-[20px]" src="" alt="">
+                  <img class="w-[20px] h-[20px] invert" src="icons/IconPlus.svg" alt="">
                 </div>
               </div>
             </div>
@@ -236,7 +238,7 @@
               <div>
                 <!-- button icon -->
                 <div class="w-[20px] h-[20px] rounded-full bg-[#ffffff]">
-                  <img class="w-[20px] h-[20px]" src="" alt="">
+                  <img class="w-[20px] h-[20px] invert" src="icons/IconPlus.svg" alt="">
                 </div>
               </div>
             </div>
@@ -251,7 +253,7 @@
               <div>
                 <!-- button icon -->
                 <div class="w-[20px] h-[20px] rounded-full bg-[#ffffff]">
-                  <img class="w-[20px] h-[20px]" src="" alt="">
+                  <img class="w-[20px] h-[20px] invert" src="icons/IconPlus.svg" alt="">
                 </div>
               </div>
             </div>
@@ -293,41 +295,41 @@
           Смотреть все
           <!-- button icon -->
           <div class="w-[20px] h-[20px] rounded-full bg-[#181818]">
-            <img class="w-[20px] h-[20px]" src="" alt="">
+            <img class="w-[20px] h-[20px]" src="icons/IconPlus.svg" alt="">
           </div>
         </a>
       </div>
       <div class="flex flex-row gap-[5px]">
         <div class="flex items-center justify-center w-[40px] h-[40px] rounded-full border-[1px] border-[#181818] cursor-pointer" data-prev>
-          <img class="w-[40px] h-[40px]" src="" alt="">
+          <img class="w-[40px] h-[40px] invert" src="icons/IconLeft.svg" alt="">
         </div>
         <div class="flex items-center justify-center w-[40px] h-[40px] rounded-full border-[1px] border-[#181818] cursor-pointer" data-next>
-          <img class="w-[40px] h-[40px]" src="" alt="">
+          <img class="w-[40px] h-[40px] invert" src="icons/IconRight.svg" alt="">
         </div>
       </div>
     </div>
     <div class="relative w-full h-[580px] max-md:h-[380px] overflow-x-hidden">
       <div class="absolute h-[580px] max-md:h-[380px] left-0 top-0 min-w-fit w-fit max-w-fit flex flex-row gap-[2px]" data-track>
-        <a href="#" target="_blank" class="project senkino max-w-[719px] w-[719px] max-md:min-w-[330px] max-md:max-w-[330px] max-md:w-[330px] h-full max-md:h-[380px] bg-amber-300" data-slide>
-          <div class="flex items-center gap-2 w-full h-[100px] bg-black px-[40px]">
+        <a href="https://senkino-prom.ru" target="_blank" class="project senkino max-w-[719px] w-[719px] max-md:min-w-[330px] max-md:max-w-[330px] max-md:w-[330px] h-full max-md:h-[380px] bg-amber-300" data-slide>
+          <div class="flex items-center gap-2 w-full h-[100px] bg-[#181818] px-[40px]">
             <div class="project_color rounded-full h-[30px] w-[30px]">
-              <img class="h-[30px] w-[30px]" src="" alt="">
+              <img class="h-[30px] w-[30px] invert" src="icons/IconPlus.svg" alt="">
             </div>
             <p class="text uppercase">Сенкино</p>
           </div>
         </a>
-        <a href="#" target="_blank" class="project balashiha max-w-[719px] w-[719px] max-md:min-w-[330px] max-md:max-w-[330px] max-md:w-[330px] h-full max-md:h-[380px] bg-amber-300" data-slide>
-          <div class="flex items-center gap-2 w-full h-[100px] bg-black px-[40px]">
+        <a href="https://balashiha-prom.ru" target="_blank" class="project balashiha max-w-[719px] w-[719px] max-md:min-w-[330px] max-md:max-w-[330px] max-md:w-[330px] h-full max-md:h-[380px] bg-amber-300" data-slide>
+          <div class="flex items-center gap-2 w-full h-[100px] bg-[#181818] px-[40px]">
             <div class="project_color rounded-full h-[30px] w-[30px]">
-              <img class="h-[30px] w-[30px]" src="" alt="">
+              <img class="h-[30px] w-[30px] invert" src="icons/IconPlus.svg" alt="">
             </div>
             <p class="text uppercase">Балашиха</p>
           </div>
         </a>
-        <a href="#" target="_blank" class="project kuvekino max-w-[719px] w-[719px] max-md:min-w-[330px] max-md:max-w-[330px] max-md:w-[330px] h-full max-md:h-[380px] bg-amber-300" data-slide>
-          <div class="flex items-center gap-2 w-full h-[100px] bg-black px-[40px]">
+        <a href="https://kuvekino-prom.ru" target="_blank" class="project kuvekino max-w-[719px] w-[719px] max-md:min-w-[330px] max-md:max-w-[330px] max-md:w-[330px] h-full max-md:h-[380px] bg-amber-300" data-slide>
+          <div class="flex items-center gap-2 w-full h-[100px] bg-[#181818] px-[40px]">
             <div class="project_color rounded-full h-[30px] w-[30px]">
-              <img class="h-[30px] w-[30px]" src="" alt="">
+              <img class="h-[30px] w-[30px] invert" src="icons/IconPlus.svg" alt="">
             </div>
             <p class="text uppercase">Кувекино</p>
           </div>
@@ -353,12 +355,12 @@
         <p class="row_text">Комментарий (необязательно)</p>
       </div>
       <div class="flex flex-row max-md:flex-col justify-between items-center max-md:items-start max-md:gap-[30px] w-full p-[40px] pt-[40px] max-md:px-[0] max-md:pt-[40px]">
-        <p class="text-[11px] leading-[13px] text-[#9CA8AE] uppercase">Нажимаю кнопку «отправить»,<br> я соглашаюсь на обработку<br><a class="underline text-black" href="#">персональных данных</a></p>
+        <p class="text-[11px] leading-[13px] text-[#9CA8AE] uppercase">Нажимаю кнопку «отправить»,<br> я соглашаюсь на обработку<br><a class="underline text-[#181818]" href="#">персональных данных</a></p>
         <button class="button primary">
           Отправить
           <!-- button icon -->
           <div class="w-[20px] h-[20px] rounded-full bg-white">
-            <img class="w-[20px] h-[20px]" src="" alt="">
+            <img class="w-[20px] h-[20px] invert" src="icons/IconPlus.svg" alt="">
           </div>
         </button>
       </div>
